@@ -748,11 +748,16 @@ body {
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid #42d392;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
 }
 
 .founder-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;
     display: block;
 }
