@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Workout | FITZONE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">💪</div>
+
+        FITZONE
+
+    </a>
+
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="workouts.html">
+                ← Back to Workouts
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<section class="section">
+
+    <div class="section-title">
+
+        <h2 id="bodyPartTitle">
+            WORKOUTS
+        </h2>
+
+        <p>
+            Complete exercises and earn XP
+        </p>
+
+    </div>
+
+
+    <div class="grid"
+         id="exerciseContainer">
+
+    </div>
+
+
+    <div class="timer-container"
+         id="workoutTimerSection">
+
+        <h2 id="currentExercise">
+            Select an Exercise
+        </h2>
+
+        <p>
+            Focus. Train. Improve.
+        </p>
+
+
+        <div class="timer"
+             id="timer">
+
+            00:45
+
+        </div>
+
+
+        <div class="timer-controls">
+
+            <button
+                class="btn btn-primary"
+                onclick="startTimer()">
+
+                ▶ Start
+
+            </button>
+
+
+            <button
+                class="btn btn-outline"
+                onclick="pauseTimer()">
+
+                ⏸ Pause
+
+            </button>
+
+
+            <button
+                class="btn btn-outline"
+                onclick="resetTimer()">
+
+                ↻ Reset
+
+            </button>
+
+
+            <button
+                class="btn btn-primary"
+                onclick="completeWorkout()">
+
+                ✓ Complete
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
