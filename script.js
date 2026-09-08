@@ -540,3 +540,26 @@ document.addEventListener("DOMContentLoaded", () => {
     loadBodyPart();
 
 });
+// COMPLETE GOAL
+
+function completeGoal(button) {
+
+    if (button.dataset.completed === "true") {
+        alert("This goal is already completed!");
+        return;
+    }
+
+    button.dataset.completed = "true";
+
+    button.textContent = "✓ Completed";
+
+    button.style.opacity = "0.7";
+
+    user.xp += 30;
+
+    saveUser();
+
+    updateUI();
+
+    alert("🎯 Goal Completed! +30 XP");
+}
