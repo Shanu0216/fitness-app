@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shanu016.github.io/fitness-app/sitemap.xml
