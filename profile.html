@@ -1,192 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Profile | FITZONE</title>
-
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile | FITZONE</title><link rel="stylesheet" href="style.css"></head>
 <body>
-
-
-<nav class="navbar">
-
-    <a href="index.html" class="logo">
-        <div class="logo-icon">💪</div>
-        <span>FITZONE</span>
-    </a>
-
-    <ul class="nav-links">
-
-        <li><a href="index.html">🏠 Home</a></li>
-
-        <li><a href="workouts.html">💪 Workouts</a></li>
-
-        <li><a href="nutrition.html">🥗 Nutrition</a></li>
-
-        <li><a href="progress.html">📊 Progress</a></li>
-
-        <li><a href="calculator.html">🧮 Calculator</a></li>
-
-        <li><a href="goals.html">🎯 Goals</a></li>
-
-        <li><a href="achievements.html">🏆 Achievements</a></li>
-
-        <li><a href="profile.html">👤 Profile</a></li>
-
-    </ul>
-
-</nav>
-
-
-<section class="section">
-
-    <div class="section-title">
-
-        <h2>👤 My Profile</h2>
-
-        <p>
-            Your FitZone fitness profile
-        </p>
-
-    </div>
-
-
-    <div class="calculator"
-         style="text-align:center;">
-
-        <div
-            style="
-            width:120px;
-            height:120px;
-            border-radius:50%;
-            margin:0 auto 20px;
-            display:grid;
-            place-items:center;
-            background:#1c211e;
-            border:3px solid #20e070;
-            font-size:50px;">
-
-            👤
-
-        </div>
-
-
-        <h2 class="username">
-            Fitness Warrior
-        </h2>
-
-        <p style="color:#20e070;">
-            FITZONE MEMBER
-        </p>
-
-
-        <br>
-
-
-        <div class="stats">
-
-            <div class="stat-card">
-
-                <h3>Total XP</h3>
-
-                <strong class="user-xp">
-                    0
-                </strong>
-
-            </div>
-
-
-            <div class="stat-card">
-
-                <h3>Workouts</h3>
-
-                <strong class="workout-count">
-                    0
-                </strong>
-
-            </div>
-
-
-            <div class="stat-card">
-
-                <h3>Achievements</h3>
-
-                <strong class="achievement-count">
-                    0
-                </strong>
-
-            </div>
-
-        </div>
-
-
-        <button
-            class="btn btn-outline"
-            onclick="logout()">
-
-            Logout
-
-        </button>
-
-    </div>
-
+<nav class="navbar"><a href="index.html" class="logo"><div class="logo-icon">💪</div><span>FITZONE</span></a>
+<ul class="nav-links">
+<li><a href="index.html">🏠 Home</a></li><li><a href="workouts.html">💪 Workouts</a></li><li><a href="nutrition.html">🥗 Nutrition</a></li><li><a href="progress.html">📊 Progress</a></li><li><a href="calculator.html">🧮 Calculator</a></li><li><a href="goals.html">🎯 Goals</a></li><li><a href="achievements.html">🏆 Achievements</a></li><li><a href="profile.html">👤 Profile</a></li>
+</ul></nav>
+<main class="profile-page">
+<section class="profile-hero">
+<div><span class="hero-tag">👤 FITZONE MEMBER PROFILE</span><h1>Welcome, <span class="username">Fitness Warrior</span></h1><p>Your personal fitness command center.</p></div>
+<div class="profile-avatar">💪</div>
 </section>
-
-
-<section class="founder">
-
-    <h2>
-        FITZONE <span>Founder</span>
-    </h2>
-
-    <div
-        style="
-        width:130px;
-        height:130px;
-        margin:20px auto;
-        border-radius:50%;
-        border:4px solid #20e070;
-        display:grid;
-        place-items:center;
-        background:#1c211e;
-        font-size:55px;">
-
-        👤
-
-    </div>
-
-    <h2>Shanawaz</h2>
-
-    <p>Founder & Creator of FITZONE</p>
-
-    <p>
-        Building a stronger generation,
-        one workout at a time.
-    </p>
-
+<section class="profile-grid">
+<div class="profile-card profile-main">
+<div class="profile-card-title"><h2>👤 Personal Profile</h2><span class="profile-status">● Active</span></div>
+<div class="profile-identity"><div class="big-avatar">💪</div><div><h2 class="username">Fitness Warrior</h2><p>🔥 Consistency builds strength</p></div></div>
+<div class="profile-info-grid">
+<div><span>🏆 Rank</span><strong class="user-level">Beginner</strong></div>
+<div><span>⭐ XP</span><strong><span class="user-xp">0</span> XP</strong></div>
+<div><span>💪 Workouts</span><strong class="workout-count">0</strong></div>
+<div><span>🏅 Achievements</span><strong class="achievement-count">0</strong></div>
+</div>
+<button class="btn btn-outline" onclick="logout()">🚪 Logout</button>
+</div>
+<div class="profile-card">
+<div class="profile-card-title"><h2>⭐ XP Level</h2></div>
+<div class="level-number"><span class="user-level">Beginner</span></div>
+<div class="xp-top"><span>Progress to next level</span><b><span class="user-xp">0</span> XP</b></div>
+<div class="progress-bar"><div class="progress-fill"></div></div>
+<p class="muted">Keep completing workouts and goals to earn XP.</p>
+</div>
+<div class="profile-card">
+<div class="profile-card-title"><h2>📈 Your Stats</h2></div>
+<div class="mini-stat"><span>🔥 Current streak</span><strong>Keep going</strong></div>
+<div class="mini-stat"><span>🎯 Goals</span><strong>Active</strong></div>
+<div class="mini-stat"><span>🏆 Achievements</span><strong><span class="achievement-count">0</span> unlocked</strong></div>
+</div>
+<div class="profile-card">
+<div class="profile-card-title"><h2>⚙️ Quick Actions</h2></div>
+<a class="action-row" href="workouts.html">💪 <span>Start a workout</span><b>→</b></a>
+<a class="action-row" href="nutrition.html">🥗 <span>View nutrition</span><b>→</b></a>
+<a class="action-row" href="goals.html">🎯 <span>Check goals</span><b>→</b></a>
+<a class="action-row" href="achievements.html">🏆 <span>View achievements</span><b>→</b></a>
+</div>
 </section>
-
-
-<footer>
-
-    © 2026 FITZONE —
-    Created by Shanawaz
-
-</footer>
-
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
+</main>
+<section class="founder"><h2>FITZONE <span>Founder</span></h2><div class="founder-photo founder-placeholder">👤</div><h2>Shanawaz</h2><p>Founder & Creator of FITZONE</p><p>Building a stronger generation, one workout at a time.</p></section>
+<footer>© 2026 FITZONE — Created by Shanawaz</footer>
+<script src="script.js"></script></body></html>
