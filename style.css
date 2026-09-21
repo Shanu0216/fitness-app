@@ -758,3 +758,23 @@ body {
     object-position: center;
     display: block;
 }
+
+
+/* FITZONE HERO BODYBUILDER */
+.hero{gap:40px}
+.hero-content{flex:1}
+.hero-animation{flex:0 0 360px;height:410px;display:grid;place-items:center;position:relative}
+.hero-animation:before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(32,224,112,.2),transparent 68%);animation:glow 3s ease-in-out infinite}
+.bodybuilder{width:230px;height:340px;position:relative;animation:floatBB 2.4s ease-in-out infinite}
+.bb-head{position:absolute;top:15px;left:90px;width:50px;height:50px;border-radius:50%;background:var(--green);box-shadow:0 0 25px rgba(32,224,112,.4)}
+.bb-body{position:absolute;top:72px;left:62px;width:106px;height:135px;background:var(--green);clip-path:polygon(25% 0,75% 0,100% 24%,82% 100%,18% 100%,0 24%)}
+.bb-arm{position:absolute;top:72px;width:25px;height:125px;border-radius:20px;background:var(--green);transform-origin:top center}
+.bb-left{left:42px;transform:rotate(25deg);animation:armL 1.2s ease-in-out infinite alternate}
+.bb-right{right:42px;transform:rotate(-25deg);animation:armR 1.2s ease-in-out infinite alternate}
+.bb-leg{position:absolute;top:195px;width:35px;height:120px;border-radius:18px;background:var(--green)}
+.bb-leg-left{left:72px;transform:rotate(6deg)}.bb-leg-right{right:72px;transform:rotate(-6deg)}
+.bb-bar{position:absolute;left:-10px;top:92px;width:250px;height:8px;border-radius:10px;background:#d9e2dc;animation:barUp 2.4s ease-in-out infinite}
+.bb-bar:before,.bb-bar:after{content:"";position:absolute;top:-22px;width:15px;height:52px;border-radius:5px;background:var(--green)}
+.bb-bar:before{left:0}.bb-bar:after{right:0}
+@keyframes floatBB{0%,100%{transform:translateY(5px)}50%{transform:translateY(-8px)}}@keyframes armL{to{transform:rotate(34deg)}}@keyframes armR{to{transform:rotate(-34deg)}}@keyframes barUp{0%,100%{transform:translateY(10px)}50%{transform:translateY(-10px)}}@keyframes glow{0%,100%{transform:scale(.92);opacity:.7}50%{transform:scale(1.08);opacity:1}}
+@media(max-width:850px){.hero{flex-direction:column;padding:55px 6% 40px;text-align:center}.hero-buttons{justify-content:center}.hero-animation{flex:0 0 auto;width:100%;height:300px}.bodybuilder{transform:scale(.78)}}
