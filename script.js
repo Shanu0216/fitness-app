@@ -461,38 +461,13 @@ function loadBodyPart() {
     workouts[bodyPart].forEach((exercise, index) => {
 
         container.innerHTML += `
-
         <div class="card workout-card">
-
-            <div class="workout-icon">
-                ${getWorkoutIcon(bodyPart)}
-            </div>
-
+            <div class="workout-icon">${getWorkoutIcon(bodyPart)}</div>
             <h3>${exercise}</h3>
-
-            <div class="workout-meta">
-
-                <span class="badge">
-                    Exercise ${index + 1}
-                </span>
-
-                <span class="badge">
-                    3 Sets × 12 Reps
-                </span>
-
-            </div>
-
-            <button
-                class="btn btn-primary"
-                onclick="startExercise('${exercise}')">
-
-                Start Workout
-
-            </button>
-
-        </div>
-
-        `;
+            <div class="workout-meta"><span class="badge">Exercise ${index + 1}</span><span class="badge">3 Sets × 12 Reps</span></div>
+            <a class="video-link" href="${getExerciseVideoUrl(exercise)}" target="_blank" rel="noopener noreferrer">▶️ Watch exercise video</a>
+            <button class="btn btn-primary" style="margin-top:15px" onclick="startExercise('${exercise.replace(/'/g,"\\'")}')">⏱️ Start Workout</button>
+        </div>`;
     });
 }
 
@@ -562,4 +537,10 @@ function completeGoal(button) {
     updateUI();
 
     alert("🎯 Goal Completed! +30 XP");
+}
+
+
+// VIDEO FOR EVERY EXERCISE
+function getExerciseVideoUrl(exercise){
+    return "https://www.youtube.com/results?search_query="+encodeURIComponent("FitZone "+exercise+" exercise tutorial");
 }
